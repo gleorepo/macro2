@@ -4,13 +4,13 @@
 #include QMK_KEYBOARD_H
 
 enum layers {
-  _ART_BASE,
+  BASE,
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
-[_ART_BASE] = LAYOUT_ortho_2x4(
-KC_A,OSM(KC_LSFT),KC_NO,KC_NO,
+[BASE] = LAYOUT_ortho_2x4(
+KC_A,OSM(MOD_LSFT),KC_NO,KC_NO,
 KC_B,KC_NO,KC_NO,KC_NO
 ),
 
